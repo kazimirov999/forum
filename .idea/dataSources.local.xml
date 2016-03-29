@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - forumdb@localhost" uuid="34d49651-620b-4057-a67e-91e546049086">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>forumdb.*</schema-pattern>
+      <default-schemas>forumdb.*</default-schemas>
+    </data-source>
+  </component>
+</project>

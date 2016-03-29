@@ -1,0 +1,599 @@
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+html {
+    background-color: #D8D8D8;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* End of Eric Meyer's CSS Reset */
+
+body {
+    font-family: 'Helvetica', "Liberation Sans", "Nimbus Sans L", sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+    min-width: 1100px;
+    margin: 0 auto;
+
+}
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.middle {
+    min-height: 600px;
+    position: relative;
+    background: rgb(247, 247, 247);
+}
+
+.middle:after {
+    display: table;
+    clear: both;
+    content: '';
+}
+
+.container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.content {
+    padding: 0 20px;
+}
+
+
+.error {
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    color: #8b0516
+}
+
+.center {
+    text-align: center
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#failure_message{
+    text-align: center;
+    margin: 20px;
+    line-height: 28px;
+}
+strong {
+    color: black;
+    font-weight: 600;
+}
+
+#service_message{
+    margin-top: 85px;
+     text-align: center;
+    font-size: 23px;
+    color: rgb(34, 113, 18);
+ }
+.backToIndexPage{
+    text-align: center;
+    padding: 34px;
+    margin: 35px;
+    text-decoration: none;
+    color: rgb(26, 7, 7);
+    font-size: 16px;
+}
+.backToIndexPage a:hover{
+    color: #09ae39;
+}
+
+
+/*--------------main board table form-----------------------------------------------*/
+
+.mainBoard {
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    margin: 0px;
+    padding: 0px;
+    margin:0px;padding:0px;
+    border:1px solid rgb(156, 156, 156);
+
+
+    -moz-border-radius-bottomleft:0px;
+    -webkit-border-bottom-left-radius:0px;
+    border-bottom-left-radius:0px;
+
+    -moz-border-radius-bottomright:0px;
+    -webkit-border-bottom-right-radius:0px;
+    border-bottom-right-radius:0px;
+
+    -moz-border-radius-topright:0px;
+    -webkit-border-top-right-radius:0px;
+    border-top-right-radius:0px;
+
+    -moz-border-radius-topleft:0px;
+    -webkit-border-top-left-radius:0px;
+    border-top-left-radius:0px;
+}.mainBoard table{
+     border-collapse: collapse;
+     border-spacing: 0;
+     width: 100%;
+     margin: 0px;
+     padding: 0px;
+ }.mainBoard tr:last-child td:last-child {
+      -moz-border-radius-bottomright:0px;
+      -webkit-border-bottom-right-radius:0px;
+      border-bottom-right-radius:0px;
+  }
+.mainBoard table tr:first-child td:first-child {
+    -moz-border-radius-topleft:0px;
+    -webkit-border-top-left-radius:0px;
+    border-top-left-radius:0px;
+}
+.mainBoard table tr:first-child td:last-child {
+    -moz-border-radius-topright:0px;
+    -webkit-border-top-right-radius:0px;
+    border-top-right-radius:0px;
+}.mainBoard tr:last-child td:first-child{
+     -moz-border-radius-bottomleft:0px;
+     -webkit-border-bottom-left-radius:0px;
+     border-bottom-left-radius:0px;
+ }.mainBoard tr:hover td{
+      background-color: rgb(232, 232, 232);
+
+
+  }
+.mainBoard td{
+    vertical-align:middle;
+
+    background-color:#f9f9f9;
+
+    border:2px solid rgb(156, 156, 156);
+    border-width:0px 1px 1px 0px;
+    text-align:left;
+    padding:12px;
+    font-size:12px;
+    font-family:Helvetica;
+    font-weight:bold;
+    color: #0088cc;
+}.mainBoard tr:last-child td{
+     border-width:0px 1px 0px 0px;
+ }.mainBoard tr td:last-child{
+      border-width:0px 0px 1px 0px;
+  }.mainBoard tr:last-child td:last-child{
+       border-width:0px 0px 0px 0px;
+   }
+.mainBoard tr:first-child td{
+    background: #333333;
+
+    border: 0px solid background: #333333;;
+    /* text-align: center; */
+    border-width: 0px 0px 1px 1px;
+    font-size: 21px;
+    font-family: Helvetica;
+    font-weight: bold;
+    color: #ffffff;
+}
+.mainBoard tr:first-child:hover td{
+    background: #333333;
+}
+.mainBoard tr:first-child td:first-child{
+    border-width:0px 0px 1px 0px;
+}
+.mainBoard tr:first-child td:last-child{
+    border-width:0px 0px 1px 1px;
+}
+.mainBoard .title {
+    padding: 5px;
+}
+.mainBoard .rightColumn{
+    width: 140px;
+}
+
+.mainBoard .wrapInfo{
+    padding: 2px;
+    font-size: 14px;
+}
+
+.mainBoard .desc{
+    padding: 2px 3px;
+    font-size: 11px;
+    font-style: italic;
+    font-weight: 500;
+    color: black;
+}
+
+.mainBoard .amount{
+    color: #565656;
+    font-weight: 500;
+}
+.mainBoard .lastPost{
+
+}
+.mainBoard .lastPost .author{
+    color: #565656;
+    font-weight: 500;
+}
+.mainBoard p{
+    padding: 3px;
+}
+.mainBoard a:hover{
+    text-decoration: none;
+    color: #989292;
+    font-weight: 500;
+    font-size: 13px;
+}
+.mainBoard a{
+    text-decoration: none;
+    color: #0088cc;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/*----------------------------------------------------------------------------------*/
+
+/*index page*/
+.indexPageWrapper{
+    padding: 50px 110px;
+}
+.indexPageWrapper h1{
+    color:black;
+    padding: 20px 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/*---------------------------------------------------------------------------------*/
+
+/*----------------topic show message-----------------------------------------------*/
+
+.messageWrapper{
+    min-height: 200px;
+    background-color: #E1E1E1;
+    margin: 20px 0 35px 0;
+    padding: 20px;
+    border-radius: 8px;
+
+}
+.messageWrapper p{
+    color: #0088cc;
+}
+.messageWrapper .userView{
+    width: 200px;
+    height: 145px;
+    float: left;
+    text-align: center;
+    padding-right: 19px;
+}
+.messageWrapper .userView .img{
+
+}
+.messageWrapper .userView .evaluating{
+
+}
+.messageWrapper .innerWrapper{
+
+}
+.messageWrapper .innerWrapper .titleMessage {
+
+}
+.messageWrapper .innerWrapper .titleMessage table{
+    width: 75%;
+
+}
+.messageWrapper .innerWrapper .titleMessage table .rightColumn{
+    width: 145px
+
+}
+
+.messageWrapper .innerWrapper .textMessage{
+    padding: 14px;
+    font-size: 14px;
+}
+.messageWrapper .innerWrapper .comment{
+    clear: both;
+    padding: 10px 10px 10px 210px;
+}
+.messageWrapper .innerWrapper .comment .commentList ul{
+    padding: 4px;
+}
+.messageWrapper .innerWrapper .comment .commentList .userComment {
+    font-size: 12px;
+}
+.messageWrapper .innerWrapper .comment .commentList .commentText {
+    font-size: 14px;
+}
+.messageWrapper .innerWrapper .inputComment{
+     clear: both;
+     padding-left: 200px;
+ }
+.messageWrapper .innerWrapper .inputComment form{
+
+}
+.messageWrapper .innerWrapper .inputComment form .text{
+    height: 39px;
+    width: 400px;
+}
+.messageWrapper .innerWrapper .inputComment  .submit{
+    text-align: right;
+}
+.messageWrapper .deletemessage{
+    text-align: center;
+}
+
+/*---user view board-------*/
+.userViewWrapper{
+
+}
+.userViewWrapper .userView{
+    width: 361px;
+    height: 272px;
+    background-color: rgb(218, 212, 212);
+    font-size: 15px;
+    border-radius: 8px;
+    margin: 50px auto;
+    height: 272px;
+}
+
+.userViewWrapper .userView .photo{
+    float: left;
+    padding: 20px;
+}
+
+.userViewWrapper .userView .userInf{
+    padding: 30px;
+}
+
+.userViewWrapper .userView .backToIndexPage{
+
+}
+/*------------------------------------------------------------------*/
+
+/*--------users table manage----------------------------------------*/
+.userBox {
+    padding: 35px 0 0 20px;
+}
+
+.usersTable {
+    margin: 45px 0 0 0;
+    padding: 0px;
+    width: 100%;
+    border: 1px solid #000000;
+
+    -moz-border-radius-bottomleft: 7px;
+    -webkit-border-bottom-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+
+    -moz-border-radius-bottomright: 7px;
+    -webkit-border-bottom-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+
+    -moz-border-radius-topright: 7px;
+    -webkit-border-top-right-radius: 7px;
+    border-top-right-radius: 7px;
+
+    -moz-border-radius-topleft: 7px;
+    -webkit-border-top-left-radius: 7px;
+    border-top-left-radius: 7px;
+}
+
+.usersTable table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.usersTable tr:last-child td:last-child {
+    -moz-border-radius-bottomright: 7px;
+    -webkit-border-bottom-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.usersTable table tr:first-child td:first-child {
+    -moz-border-radius-topleft: 7px;
+    -webkit-border-top-left-radius: 7px;
+    border-top-left-radius: 7px;
+}
+
+.usersTable table tr:first-child td:last-child {
+    -moz-border-radius-topright: 7px;
+    -webkit-border-top-right-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.usersTable tr:last-child td:first-child {
+    -moz-border-radius-bottomleft: 7px;
+    -webkit-border-bottom-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+.usersTable tr:hover td {
+
+}
+
+.usersTable tr:nth-child(odd) {
+    background-color: #d8d8d8;
+}
+
+.usersTable tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.usersTable td {
+    vertical-align: middle;
+
+    border: 1px solid #000000;
+    border-width: 0px 1px 1px 0px;
+    text-align: center;
+    padding: 7px;
+    font-size: 13px;
+    font-family: Arial;
+    font-weight: normal;
+    color: #000000;
+}
+
+.usersTable tr:last-child td {
+    border-width: 0px 1px 0px 0px;
+}
+
+.usersTable tr td:last-child {
+    border-width: 0px 0px 1px 0px;
+}
+
+.usersTable tr:last-child td:last-child {
+    border-width: 0px 0px 0px 0px;
+}
+
+.usersTable tr:first-child td {
+    background: -o-linear-gradient(bottom, #bfbfbf 5%, #a09e9b 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bfbfbf), color-stop(1, #a09e9b));
+    background: -moz-linear-gradient(center top, #bfbfbf 5%, #a09e9b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bfbfbf", endColorstr="#a09e9b");
+    background: -o-linear-gradient(top, #bfbfbf, a09e9b);
+
+    background-color: #bfbfbf;
+    border: 0px solid #000000;
+    text-align: center;
+    border-width: 0px 0px 1px 1px;
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #1c1c1c;
+}
+
+.usersTable tr:first-child:hover td {
+    background: -o-linear-gradient(bottom, #bfbfbf 5%, #a09e9b 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bfbfbf), color-stop(1, #a09e9b));
+    background: -moz-linear-gradient(center top, #bfbfbf 5%, #a09e9b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bfbfbf", endColorstr="#a09e9b");
+    background: -o-linear-gradient(top, #bfbfbf, a09e9b);
+
+    background-color: #bfbfbf;
+}
+
+.usersTable tr:first-child td:first-child {
+    border-width: 0px 0px 1px 0px;
+}
+
+.usersTable tr:first-child td:last-child {
+    border-width: 0px 0px 1px 1px;
+}
+
+.usersTable a {
+    color: #056F86;
+}
+
+.usersTable a:hover {
+    color: black;
+    font-size: 14px;
+}
+
+/*-------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------*/
+/*register form */
+.register{
+    padding: 50px;
+}
+.register form{
+    margin: 0px auto;
+}
+/*-----------------------------------------------------------------------------------*/
+/*--------------------------admin panel---------------------------------------------*/
+
+.adminPanel{
+    background-color: rgb(178, 228, 172);
+    padding: 18px 26px 19px 62px;
+    margin: 12px 37px 35px;
+    border-radius: 87px;
+    text-align: center;
+}
+.adminPanel .titleAdminPanel{
+    color: rgb(86, 86, 86);
+    font-weight: 600;
+}
+.adminPanel ul{
+    list-style-position: unset;
+    margin: 3px;
+}
+.adminPanel ul li{
+    display: inline-block;
+}
+/*-------------------------------------------------------------------------------------*/
+
+/*--------statistic panel wrapper-------------*/
+
+.statisticPanelWrapper{
+
+ }
+.statisticPanelWrapper .statisticPanel{
+    margin: 38px 10px 75px 111px;
+    font-size: 15px;
+    color: #000102;
+}
+.statisticPanelWrapper .statisticPanel .decor{
+    font-size: 12px;
+    text-decoration: initial;
+    font-weight: 600;
+    color: #009688;
+}
+.statisticPanelWrapper .statisticPanel ul li{
+    margin: 10px;
+}
+.statisticPanelWrapper .statisticPanel a{
+    font-size: 12px;
+    text-decoration: initial;
+    font-weight: 600;
+    color: #4A0000;
+}
+/*------------------------------------------------------------------------------------*/

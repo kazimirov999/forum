@@ -1,0 +1,229 @@
+
+/*general style form*/
+.form-container {
+    border: 1px solid #474747;
+    background: #e6e6e6;
+    background: -webkit-gradient(linear, left top, left bottom, from(#e3e3e3), to(#e6e6e6));
+    background: -webkit-linear-gradient(top, #e3e3e3, #e6e6e6);
+    background: -moz-linear-gradient(top, #e3e3e3, #e6e6e6);
+    background: -ms-linear-gradient(top, #e3e3e3, #e6e6e6);
+    background: -o-linear-gradient(top, #e3e3e3, #e6e6e6);
+    background-image: -ms-linear-gradient(top, #e3e3e3 0%, #e6e6e6 100%);
+    -webkit-border-radius: 19px;
+    -moz-border-radius: 19px;
+    border-radius: 19px;
+    -webkit-box-shadow: rgba(000, 000, 000, 0.9) 0 1px 2px, inset rgba(255, 255, 255, 0.4) 0 1px 0;
+    -moz-box-shadow: rgba(000, 000, 000, 0.9) 0 1px 2px, inset rgba(255, 255, 255, 0.4) 0 1px 0;
+    box-shadow: rgba(000, 000, 000, 0.9) 0 1px 2px, inset rgba(255, 255, 255, 0.4) 0 1px 0;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    text-decoration: none;
+    vertical-align: middle;
+    min-width: 300px;
+    padding: 20px;
+    width: 300px;
+}
+
+.form-field {
+    border: 1px solid #333133;
+    background: #fffcff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    color: #000000;
+    -webkit-box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0, inset rgba(000, 000, 000, 0.7) 0 0px 0px;
+    -moz-box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0, inset rgba(000, 000, 000, 0.7) 0 0px 0px;
+    box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0, inset rgba(000, 000, 000, 0.7) 0 0px 0px;
+    padding: 8px;
+    margin-bottom: 20px;
+    width: 295px;
+}
+
+.form-field:focus {
+    background: #fff;
+    color: #000000;
+}
+
+.form-container h2 {
+    text-shadow: #ffffff 0 1px 0;
+    font-size: 18px;
+    margin: 0 0 10px 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.form-title {
+    margin-bottom: 3px;
+    color: #000000;
+    text-shadow: #ffffff 0 1px 0;
+}
+
+.submit-container {
+    margin: 8px 0;
+    text-align: center;
+}
+
+.submit-button {
+    border: 1px solid #363336;
+    background: #8f8f8f;
+    background: -webkit-gradient(linear, left top, left bottom, from(#616161), to(#8f8f8f));
+    background: -webkit-linear-gradient(top, #616161, #8f8f8f);
+    background: -moz-linear-gradient(top, #616161, #8f8f8f);
+    background: -ms-linear-gradient(top, #616161, #8f8f8f);
+    background: -o-linear-gradient(top, #616161, #8f8f8f);
+    background-image: -ms-linear-gradient(top, #616161 0%, #8f8f8f 100%);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0, inset rgba(255, 255, 255, 0.4) 0 1px 0;
+    -moz-box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0, inset rgba(255, 255, 255, 0.4) 0 1px 0;
+    box-shadow: rgba(255, 255, 255, 0.4) 0 1px 0, inset rgba(255, 255, 255, 0.4) 0 1px 0;
+    text-shadow: #474747 0 1px 0;
+    color: #ffffff;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    padding: 8.5px 18px;
+    font-size: 14px;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.submit-button:hover {
+    border: 1px solid #323330;
+    text-shadow: #000000 0 1px 0;
+    background: #c8e3f0;
+    background: -webkit-gradient(linear, left top, left bottom, from(#d9d9d9), to(#c8e3f0));
+    background: -webkit-linear-gradient(top, #d9d9d9, #c8e3f0);
+    background: -moz-linear-gradient(top, #d9d9d9, #c8e3f0);
+    background: -ms-linear-gradient(top, #d9d9d9, #c8e3f0);
+    background: -o-linear-gradient(top, #d9d9d9, #c8e3f0);
+    background-image: -ms-linear-gradient(top, #d9d9d9 0%, #c8e3f0 100%);
+    color: #362a36;
+}
+
+.submit-button:active {
+    text-shadow: #2d2e2c 0 1px 0;
+    border: 1px solid #5f615c;
+    background: #adb3a6;
+    background: -webkit-gradient(linear, left top, left bottom, from(#e0e6da), to(#c8e3f0));
+    background: -webkit-linear-gradient(top, #e0e6da, #adb3a6);
+    background: -moz-linear-gradient(top, #e0e6da, #adb3a6);
+    background: -ms-linear-gradient(top, #e0e6da, #adb3a6);
+    background: -o-linear-gradient(top, #e0e6da, #adb3a6);
+    background-image: -ms-linear-gradient(top, #e0e6da 0%, #adb3a6 100%);
+    color: #fff;
+}
+
+/*--form authentication------------------------------------*/
+.authenticationDiv form {
+    margin: 20px auto;
+}
+
+.authenticationDiv form .submit {
+    text-align: center;
+}
+.authenticationDiv #service_message{
+    margin: 3px;
+    padding: 3px;
+}
+/*----------------------------------------------------------*/
+
+/*--little form authentication------------------------------------*/
+.littleAuthenticationDiv form {
+    background: linear-gradient(#f7f7f7 0%, #ececec 100%);
+    margin: 20px auto;
+}
+
+.littleAuthenticationDiv form .submit {
+    text-align: center;
+}
+
+.littleAuthenticationDiv form {
+    max-width: 207px;
+    width: 207px;
+    min-width: 207px;
+    border: none;
+    margin: 0;
+    padding: 10px 20px 10px 20px;
+    border-radius: initial;
+}
+
+.littleAuthenticationDiv form h2 {
+    display: none;
+}
+
+.littleAuthenticationDiv form input {
+    width: 206px;
+    height: 25px;
+    margin-bottom: 5px;
+}
+
+.littleAuthenticationDiv form .submit input {
+    width: 99px;
+    height: 26px;
+    margin-bottom: 0;
+    background: #f2f2f2;
+    background-image: -webkit-linear-gradient(top, #f2f2f2, #c2bec2);
+    background-image: -moz-linear-gradient(top, #f2f2f2, #c2bec2);
+    background-image: -ms-linear-gradient(top, #f2f2f2, #c2bec2);
+    background-image: -o-linear-gradient(top, #f2f2f2, #c2bec2);
+    background-image: linear-gradient(to bottom, #f2f2f2, #c2bec2);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    color: #3A3638;
+    font-size: 12px;
+    padding: 3px 12px 3px 12px;
+    border: solid #8a8a8a 1px;
+    text-decoration: none;
+}
+
+.littleAuthenticationDiv form .submit input:hover {
+    background: #f2eff2;
+    background-image: -webkit-linear-gradient(top, #f2eff2, #cacbcc);
+    background-image: -moz-linear-gradient(top, #f2eff2, #cacbcc);
+    background-image: -ms-linear-gradient(top, #f2eff2, #cacbcc);
+    background-image: -o-linear-gradient(top, #f2eff2, #cacbcc);
+    background-image: linear-gradient(to bottom, #f2eff2, #cacbcc);
+    text-decoration: none;
+}
+
+/*----------------------------------------------------------*/
+
+/*------add message form-----------*/
+.addMessageForm{
+
+}
+.addMessageForm .textArea{
+    min-width: 620px;
+    height: 93px;
+}
+.addMessageForm table{
+    text-align: right;
+}
+/*----------------------------------------------------------*/
+
+/*----------------------------------------------------------*/
+
+.addBranchForm {
+
+}
+.addBranchForm .name {
+
+}
+.addBranchForm table{
+    margin: 72px auto;
+}
+.addBranchForm .textArea{
+    margin: 10px 0 0 18px;
+    width: 464px;
+}
+.addBranchForm form .name {
+    width: 464px;
+    height: 30px;
+    margin: 19px;
+}
+.addBranchForm table .submit{
+    text-align: right;
+    padding: 10px 19px;
+}
+/*----------------------------------------------------*/
