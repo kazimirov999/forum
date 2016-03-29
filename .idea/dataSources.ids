@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - forumdb@localhost" uuid="34d49651-620b-4057-a67e-91e546049086">
+    <database-info product="MySQL" version="5.5.23" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="forumdb"/>
+    <table name="branches" schema="" catalog="forumdb" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="description" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="name" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="section_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FK_mc7ngkdkmip8y9rdt2a49m5xv" columns="section_id" ref-table="sections" ref-schema="" ref-catalog="forumdb" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="FK_1kne8r5xuwwjf7g3pws9lg16e" table="topics" schema="" catalog="forumdb" columns="branch_id"/>
+      <index name="FK_mc7ngkdkmip8y9rdt2a49m5xv" unique="false" columns="section_id"/>
+    </table>
+    <table name="comments" schema="" catalog="forumdb" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="publicationDate" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="text" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="message_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="user_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FK_1x3vdhb5vv8eu5708riqe07wc" columns="user_id" ref-table="users" ref-schema="" ref-catalog="forumdb" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FK_dd3ceypd16ra535unjabnn4i3" columns="message_id" ref-table="messages" ref-schema="" ref-catalog="forumdb" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="FK_1x3vdhb5vv8eu5708riqe07wc" unique="false" columns="user_id"/>
+      <index name="FK_dd3ceypd16ra535unjabnn4i3" unique="false" columns="message_id"/>
+    </table>
+    <table name="countries" schema="" catalog="forumdb" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="iso" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="name" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="FK_40bk1xo1jc7k4f7ym0daevg2f" table="users" schema="" catalog="forumdb" columns="country_id"/>
+    </table>
+    <table name="messages" schema="" catalog="forumdb" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="grade" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="publicationDate" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="text" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="topic_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="user_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FK_j3v4l57l24nd1rt1nm8c27l4g" columns="user_id" ref-table="users" ref-schema="" ref-catalog="forumdb" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FK_hei5i058a1jn1h2il7cisw2al" columns="topic_id" ref-table="topics" ref-schema="" ref-catalog="forumdb" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="FK_dd3ceypd16ra535unjabnn4i3" table="comments" schema="" catalog="forumdb" columns="message_id"/>
+      <index name="FK_hei5i058a1jn1h2il7cisw2al" unique="false" columns="topic_id"/>
+      <index name="FK_j3v4l57l24nd1rt1nm8c27l4g" unique="false" columns="user_id"/>
+    </table>
+    <table name="sections" schema="" catalog="forumdb" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="FK_mc7ngkdkmip8y9rdt2a49m5xv" table="branches" schema="" catalog="forumdb" columns="section_id"/>
+    </table>
+    <table name="topics" schema="" catalog="forumdb" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="publicationDate" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="branch_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="user_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FK_3xwo6yg0xh1fc5i2ilcf6vbd7" columns="user_id" ref-table="users" ref-schema="" ref-catalog="forumdb" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FK_1kne8r5xuwwjf7g3pws9lg16e" columns="branch_id" ref-table="branches" ref-schema="" ref-catalog="forumdb" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="FK_hei5i058a1jn1h2il7cisw2al" table="messages" schema="" catalog="forumdb" columns="topic_id"/>
+      <index name="FK_1kne8r5xuwwjf7g3pws9lg16e" unique="false" columns="branch_id"/>
+      <index name="FK_3xwo6yg0xh1fc5i2ilcf6vbd7" unique="false" columns="user_id"/>
+    </table>
+    <table name="users" schema="" catalog="forumdb" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="dateRegister" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="email" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="enable" sqlType="BIT" precision="1" scale="0" nullable="false" jdbcType="-7"/>
+      <column name="login" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="password" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="photo" sqlType="MEDIUMBLOB" precision="16777215" scale="0" nullable="true" jdbcType="-4"/>
+      <column name="role" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="country_id" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FK_40bk1xo1jc7k4f7ym0daevg2f" columns="country_id" ref-table="countries" ref-schema="" ref-catalog="forumdb" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="FK_1x3vdhb5vv8eu5708riqe07wc" table="comments" schema="" catalog="forumdb" columns="user_id"/>
+      <exported-key name="FK_j3v4l57l24nd1rt1nm8c27l4g" table="messages" schema="" catalog="forumdb" columns="user_id"/>
+      <exported-key name="FK_3xwo6yg0xh1fc5i2ilcf6vbd7" table="topics" schema="" catalog="forumdb" columns="user_id"/>
+      <index name="UK_6dotkott2kjsp8vw4d0m25fb7" unique="true" columns="email"/>
+      <index name="UK_ow0gan20590jrb00upg3va2fn" unique="true" columns="login"/>
+      <index name="FK_40bk1xo1jc7k4f7ym0daevg2f" unique="false" columns="country_id"/>
+    </table>
+  </data-source>
+</component>

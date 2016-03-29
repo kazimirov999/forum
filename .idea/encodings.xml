@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/src/main/java/com/it/forum/interceptors/LastModelAndViewInterceptor.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/ValidationMessages_ru.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/datasource-tx-config.xml" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/spring/root-context.xml" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/test/resources/test-root-context.xml" charset="windows-1251" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

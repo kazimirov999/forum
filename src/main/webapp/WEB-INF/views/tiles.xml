@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+
+<tiles-definitions>
+
+    <definition name="defaultTemplate" template="/WEB-INF/views/tiles/template.jsp">
+        <put-attribute name="header" value="/WEB-INF/views/tiles/modules/fragments/header.jsp"/>
+        <put-attribute name="body" value=""/>
+        <put-attribute name="barInfo" value="/WEB-INF/views/tiles/modules/fragments/statistics_panel.jsp"/>
+        <put-attribute name="footer" value="/WEB-INF/views/tiles/modules/fragments/footer.jsp"/>
+        <put-attribute name="titleName" value="mainTitle"/>
+    </definition>
+
+    <definition name="index" extends="defaultTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/modules/pages/index.jsp"/>
+    </definition>
+
+    <definition name="information_page" extends="defaultTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/modules/pages/information_page.jsp"/>
+    </definition>
+
+    <definition name="topics_page" extends="defaultTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/modules/pages/topics_page.jsp"/>
+    </definition>
+
+    <definition name="topic_page" extends="defaultTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/modules/pages/topic_page.jsp"/>
+    </definition>
+
+    <definition name="branch_add_page" extends="defaultTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/modules/forms/add_branch_form.jsp"/>
+    </definition>
+
+    <definition name="topic_add_page" extends="defaultTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/modules/forms/add_topic_form.jsp"/>
+    </definition>
+
+    <definition name="section_add_page" extends="defaultTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/modules/forms/add_section_form.jsp"/>
+    </definition>
+
+    <definition name="register_page" extends="defaultTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/modules/forms/register_form.jsp"/>
+    </definition>
+
+    <definition name="manage_user_page" extends="defaultTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/modules/pages/manage_user_page.jsp"/>
+    </definition>
+
+    <definition name="user_view_page" extends="defaultTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/modules/pages/user_view_page.jsp"/>
+    </definition>
+
+    <definition name="authentication_page" extends="defaultTemplate">
+        <put-attribute name="body" value="/WEB-INF/views/tiles/modules/forms/authentication_form.jsp"/>
+    </definition>
+
+</tiles-definitions>
